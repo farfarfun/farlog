@@ -125,5 +125,5 @@ def get_logger(
         return bound_logger
 
 
-# Backward-compatible alias
+# 向后兼容别名
 getLogger = get_logger
