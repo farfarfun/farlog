@@ -104,7 +104,7 @@ log = getLogger("worker")
 运行回归测试和静态检查：
 
 ```bash
-python -m unittest discover -s tests -v
+python -m pytest -q
 ruff check .
 ```
 
