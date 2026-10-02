@@ -32,6 +32,9 @@ email = "niuliangtao@qq.com"
 [[project.maintainers]]
 name = "farfarfun"
 email = "farfarfun@qq.com"
+[dependency-groups]
+dev = [ "pytest>=7.0", "ruff>=0.11.0",]
+
 [tool.hatch.build.targets.wheel]
 packages = ["src/farlog"]
 

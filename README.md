@@ -101,11 +101,18 @@ log = getLogger("worker")
 
 ## 开发
 
+开发依赖（`pytest`、`ruff`）定义在 `pyproject.toml` 的 `[dependency-groups].dev` 中，由 `uv` 管理：
+
+```bash
+uv sync
+```
+
 运行回归测试和静态检查：
 
 ```bash
-python -m pytest -q
-ruff check .
+uv run pytest -q
+uv run ruff check .
+uv run ruff format --check .
 ```
 
 ## 许可证
