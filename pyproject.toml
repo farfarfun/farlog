@@ -7,7 +7,7 @@ name = "farlog"
 version = "1.1.13"
 description = "Small Loguru helper for named rotating log files"
 readme = "README.md"
-requires-python = ">=3.10"
+requires-python = ">=3.12"
 license = "MIT"
 license-files = ["LICENSE"]
 keywords = [ "logging", "loguru", "rotation",]
@@ -39,4 +39,4 @@ dev = [ "pytest>=7.0", "ruff>=0.11.0",]
 packages = ["src/farlog"]
 
 [tool.ruff]
-target-version = "py310"
+target-version = "py312"
